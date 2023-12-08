@@ -1,1 +1,1 @@
-# naufalnashif.github.io
+# Personal Website Static
