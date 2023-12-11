@@ -130,6 +130,10 @@ body.dark-theme{
     margin: 10px auto;
 }
 
+input[type="range"] {
+  accent-color: var(--first-color);
+}
+
 /* #hueValue {
     display: inline-block;
     margin-left: 10px;
