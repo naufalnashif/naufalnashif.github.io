@@ -1,3 +1,24 @@
+// Dynamic Age
+const birthYear = 2001; // Ganti dengan tahun lahirmu
+const birthMonth = 5;   // Ganti dengan bulan lahirmu (Januari = 1)
+const birthDay = 4;    // Ganti dengan tanggal lahirmu
+const today = new Date();
+let age = today.getFullYear() - birthYear;
+
+const isBirthdayPassed =
+  today.getMonth() + 1 > birthMonth || 
+  (today.getMonth() + 1 === birthMonth && today.getDate() >= birthDay);
+
+if (!isBirthdayPassed) {
+  age--;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const ageSpan = document.getElementById("age");
+  if (ageSpan) ageSpan.textContent = age;
+});
+
+
 // Menu Show Y Hidden
 const navMenu = document.getElementById('nav-menu'), 
       navToggle = document.getElementById('nav-toggle'), 
